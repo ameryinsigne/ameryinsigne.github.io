@@ -7,153 +7,204 @@
 <script>
 var score=0;
 i = 1
+confirm("Are you ready for the Trivia!?\n\nNO CHEATING: You cannot change your answer on the same question. As a penalty, you will miss the opportunity to answer and score a point on the next question!")
 
-confirm("Are you ready for the Trivia!?")
+
 
 function main(){
 if (i==1){ 
 	document.view.qnum.value=i;
 	
 	correct="a"
-
-	ans=prompt(i+'.   What 2015 song featured the most celebrities in its music video?\n \n          a) Bad Blood by Taylor Swift\n          b) Waving Flag by Knaan\n          c) Happy by Pharrell Williams\n          d) Uptown Funk by Mark Ronson\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "1. What 2015 song featured the most celebrities in its music video?";
+	var answer1 = "a) Bad Blood by Taylor Swift";
+	var answer2 = "b) Waving Flag by Knaan";
+	var answer3 = "c) Happy by Pharrell Williams"; 
+	var answer4 = "d) Uptown Funk by Mark Ronson";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==2){ 
 	document.view.qnum.value=i;
-
+	
 	correct="b"
-
-	ans=prompt(i+'.   How many awards did Pharrell Williams recieve for the song "Happy"?\n \n          a) 3\n          b) 7\n          c) 1\n          d) 8 \n \nENTER LETTER >>   a,   b,   c,   d')  
-
+	
+	var question = '2. How many awards did Pharrell Williams recieve for the song "Happy"?';
+	var answer1 = "a) 3";
+	var answer2 = "b) 7";
+	var answer3 = "c) 1"; 
+	var answer4 = "d) 8";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==3){ 
 	document.view.qnum.value=i;
-
+	
 	correct="d"
-
-	ans=prompt(i+'.   What is the title of the song sang by all three famous singers: Jessie J, Ariana Grande and Nicki Minaj?\n \n          a) Wait A Minute\n          b) Bang\n          c) Into The Room\n          d) Bang Bang\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "3. What is the title of the song sang by all three famous singers: Jessie J, Ariana Grande and Nicki Minaj?";
+	var answer1 = "a) Wait A Minute";
+	var answer2 = "b) Bang";
+	var answer3 = "c) Into The Room"; 
+	var answer4 = "d) Bang Bang";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==4){ 
 	document.view.qnum.value=i;
-
+	
 	correct="d"
-
-	ans=prompt(i+'.   Finish the lyric from the song "Closer" by Chainsmokers:\n"You tell your friends it was..."\n \n          a) a great party\n          b) fun while it lasted\n          c) nice to see them\n          d) nice to meet them\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = '4. Finish the lyric from the song "Closer" by Chainsmokers:\n"You tell your friends it was..."';
+	var answer1 = "a) a great party";
+	var answer2 = "b) fun while it lasted";
+	var answer3 = "c) nice to see them"; 
+	var answer4 = "d) nice to meet them";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==5){ 
 	document.view.qnum.value=i;
-
+	
 	correct="b"
-
-	ans=prompt(i+'.   What is the number one hit song of 2015?\n \n          a) Hello by Adele\n          b) Uptown Funk by Mark Ronson\n          c) See You Again by Wiz Khalifa\n          d) Sorry by Justin Bieber\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "5. What is the number one hit song of 2015?";
+	var answer1 = "a) Hello by Adele";
+	var answer2 = "b) Uptown Funk by Mark Ronson";
+	var answer3 = "c) See You Again by Wiz Khalifa"; 
+	var answer4 = "d) Sorry by Justin Bieber";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==6){ 
 	document.view.qnum.value=i;
-
-	correct="c"
-
-	ans=prompt(i+'.   What song was written about the experiences of growing up and getting old?\n \n          a) When We Were Young by Adele\n          b) See You Again by Wiz Khalifa\n          c) 7 Years by Lukas Graham\n          d) All of Me by John Legend\n \nENTER LETTER >>   a,   b,   c,   d')
 	
+	correct="c"
+	
+	var question = "6. What song was written about the experiences of growing up and getting old?";
+	var answer1 = "a) When We Were Young by Adele";
+	var answer2 = "b) See You Again by Wiz Khalifa";
+	var answer3 = "c) 7 Years by Lukas Graham"; 
+	var answer4 = "d) All of Me by John Legend";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==7){ 
 	document.view.qnum.value=i;
-
+	
 	correct="a"
-
-	ans=prompt(i+'.   What song was written as a tribute to the actor Paul Walker?\n \n          a) See You Again by Wiz Khalifa\n          b) Someone Like You by Adele\n          c) Sad Song by We The Kings\n          d) One Call Away by Charlie Puth\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "7. What song was written as a tribute to the actor Paul Walker?";
+	var answer1 = "a) See You Again by Wiz Khalifa";
+	var answer2 = "b) Someone Like You by Adele";
+	var answer3 = "c) Sad Song by We The Kings"; 
+	var answer4 = "d) One Call Away by Charlie Puth";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==8){ 
 	document.view.qnum.value=i;
-
+	
 	correct="c"
-
-	ans=prompt(i+'.   Which member of One Direction left and produced the song "Pillow Talk"\n \n          a) Niall Horan\n          b) Harry Styles\n          c) Zayn Malik\n          d) Liam Payne\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = '8. Which member of One Direction left and produced the song "Pillow Talk"';
+	var answer1 = "a) Niall Horan";
+	var answer2 = "b) Harry Styles";
+	var answer3 = "c) Zayn Malik"; 
+	var answer4 = "d) Liam Payne";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==9){ 
 	document.view.qnum.value=i;
-
+	
 	correct="d"
-
-	ans=prompt(i+'.   What song was used in the 2016 Summer Olympics?\n \n          a) Roar by Katy Perry\n          b) Fight Song by Rachel Platten\n          c) I believe by Nikki Yanofsky\n          d) Rise by Katy Perry\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "9. What song was used in the 2016 Summer Olympics?";
+	var answer1 = "a) Roar by Katy Perry";
+	var answer2 = "b) Fight Song by Rachel Platten";
+	var answer3 = "c) I believe by Nikki Yanofsky"; 
+	var answer4 = "d) Rise by Katy Perry";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==10){ 
 	document.view.qnum.value=i;
-
+	
 	correct="b"
-
-	ans=prompt(i+'.   Which Twenty One Pilots song did NOT hit 2016 mainstream music?\n \n          a) Heathens\n          b) House of Gold\n          c) Stressed Out\n          d) Ride\n \nENTER LETTER >>   a,   b,   c,   d')
-
+	
+	var question = "10. Which Twenty One Pilots song did NOT hit 2016 mainstream music?";
+	var answer1 = "a) Heathens";
+	var answer2 = "b) House of Gold";
+	var answer3 = "c) Stressed Out"; 
+	var answer4 = "d) Ride";
+	
+	document.view.question.value =question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2 + '\n' + '     ' + answer3 + '\n' + '     ' + answer4;
 	document.view.snum.value=score;
 }
-
 else if (i==11){
-
-	correct="a"
-
-	ans=prompt('Thank you for playing! Please let me know whether or not you enjoyed the trivia by entering "yes" or "no"\n')
+	
+	var question = "These are your results:"
+	var answer1 = "Total Score: " + score;
+	var answer2 = "Percent Correct: " + score/10*100 +"%";
 
 	document.view.snum.value=score;
+	
+	ans=prompt('We love getting your feed back! Please let us know whether or not you enjoyed the trivia by entering "yes" or "no" ')
+	
+	document.view.go.focus();
+	if (ans=="yes"){
+		document.view.question.value ="Thank you and I am so glad you enjoyed the trivia!" + question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2;
+		score=score;
+	}
+	else if (ans=="no"){
+		document.view.question.value ="I appreciate your honesty! I will try my best to improve the trivia!" + question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2;
+		score=score;
+	document.view.snum.value=score;
+	}
+	else{
+		document.view.question.value ="You are awesome! Thank you for your feed back!" + question + '\n' + '\n' + '     ' + answer1 + '\n' + '     ' + answer2;
+	}
+} 
 }
 
+function ask(){
+	
+	ans=prompt(i+'.   ENTER LETTER >>   a,   b,   c,   d')
+	
 	document.view.go.focus();
-
 	if (correct==ans){
-
 		document.view.question.value ="You are right!"
 		score=score+1;
-	}
-	
-	else if (ans=="yes"){
-		document.view.question.value ="Thank you and I am so glad you enjoyed the trivia!"
-		score=score;
-	}
-
-	else if (ans=="no"){
-		document.view.question.value ="I appreciate your honesty! I will try my best to improve the trivia!"
-		score=score;
 	}
 	else{
 		document.view.question.value =" You are wrong"
 		score=score
 	}
-
 	i++;
+		
 }
 
 </script>
 </head>
 <body id="T1" LINK="F7DD5E" VLINK="F7DD5E" ALINK="F7DD5E" onLoad="main()">
-<img src="trivia_logo.png" width="700px">
-<br>
+<img src="trivia_logo.png" width="700px">
 <br>
 <div id="T2">
 <FORM name="view">  
-	&nbsp;Question: &nbsp;<input type="text" name="qnum" size="2">&nbsp;&nbsp;Score: &nbsp;<input type="text" name="snum" size="2">&nbsp;&nbsp;&nbsp;<input type="button" name="go" value="Next Question >" onClick=main()>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Question: &nbsp;<input type="text" name="qnum" size="2">&nbsp;&nbsp;<input type="button" name="go" value="Next Question  " onClick=main()>
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score: &nbsp;<input type="text" name="snum" size="2">&nbsp;&nbsp;<input type="button" name="choose" value="Choose Answer" onClick=ask()>
 	<br><br>
 	<TEXTAREA COLS=45 ROWS=10 name="question" wrap=virtual"></TEXTAREA>
 	
